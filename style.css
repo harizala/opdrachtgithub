@@ -1,0 +1,163 @@
+body {
+    font-family: 'Open Sans', sans-serif!important;
+}
+.top{
+    background-color: white;
+	position: absolute;
+	top: 35px;
+    width: 30%;
+    margin-left: 300px;
+    margin-top: 65px;
+    text-align: center;
+    box-shadow: 0 14px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    height: 70px;
+}
+.container{
+    width: ;
+    height: ;
+    position: absolute;
+    z-index: 0;
+
+}
+
+.headerbalk{
+    background-color: white;
+    margin-bottom: 80px;
+    float: right;
+    padding-right: 150px;
+    padding-top: 45px;
+}
+
+.backgroundpic{
+    z-index: 2;
+    width: 100%;
+
+}
+
+.witblok, .phone{
+    width: 240px;
+    text-align: center;
+    padding: 20px;
+    top: -261px;
+    left: 975px;
+    z-index: 3;
+}
+
+.phone{
+    background-color: #d6d6d6;
+    position: relative;
+    height: 135px;
+}
+.witblok{
+    background-color: white;
+    height: 60px;
+    position: relative;
+}
+
+.opacitybalk{
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    margin-top: -193px;
+    position: relative;
+    padding-bottom: 36px;
+    color: white;
+    padding-top: 30px;
+    padding-left: 18.8em;
+}
+
+.opacitybalk h1 {
+margin-left: 250px;
+    padding-left: 48px;
+}
+
+.menu{
+    background-color: black;
+    color: white;
+    padding: 31px 31px 31px 300px;
+    position: relative;
+    border: solid 1px white;
+    
+}
+        /* unvisited link */
+    a:s {
+        color: white;
+    }
+
+    /* visited link */
+    a:visited {
+        color: white;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: grey;
+    }
+
+    /* selected link */
+    a:active {
+        color: grey;
+    }
+#main{
+    background-color: black;
+    position: relative;
+    top: -325px;
+    margin-bottom: -330px;
+    
+}
+.photos, footer{
+    padding: 30px 0px;
+    margin-left: 25%;
+    width: 830px;
+    margin-top: 50px;
+}
+
+#header2{
+    text-align: center;
+    color:white;
+}
+
+#img1 , #img2 , #img3{
+    width: 273px;
+    height: 273px;
+}
+
+body {
+    color: #526066;
+    font-family: arial;
+}
+
+#date{
+    padding: 5px;
+    float: left;
+    height: 100%;
+    flex: 1 1 0;
+    text-align: center;
+    color:black;
+    font-size: 1em;
+    font-weight: 900;
+}
+#news{
+    padding: 0px 15px 15px 0px;
+    text-align: center;
+}
+#info{
+    flex: 2 1 0;
+    border-left: 2px solid black;
+    padding: 10px 0px 10px 20px;
+}
+#gradient{
+    flex: 4 1 0;
+    background-color: white
+    padding: 10px;
+    margin-top:5%; 
+    text-align:center;
+    font-size: 2em;
+    font-weight: 900;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    position: relative;
+    margin-top: 15px;
+}

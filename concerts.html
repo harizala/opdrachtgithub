@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Fluid Beats, Buy Beats!</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <meta name="description" content="Fluid Beats is a #1 top selling music producer from The Netherlands!" charset="utf-8" />
+    <style>
+        #result {
+            color: black;
+            background-color: white;
+        }
+    </style>
+</head>
+<body id="function">    
+<div class="container" style="left: 0px;">
+    <div class="headerbalk">
+        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+        <div id="plus">+</div>
+        <div id="min">-</div>
+    </div>
+    <div id="heelal">
+        <h1 class="top">FLUID BEATS</h1> 
+        <img class="backgroundpic" src="img/header2.jpg" alt="background">
+    </div>
+    <div class="opacitybalk">
+        <h2>Music Producer &amp; Audio Engineer</h2>
+    </div>
+    <div class="links menu">
+        <a href="fluidbeats.html" style="color:white; text-decoration:none;">HOME </a>
+        <a href="#" style="color:white; text-decoration:none;">ABOUT </a>
+        <a href="#" style="color:white; text-decoration:none;">CONCERTS </a>
+        <a href="#" style="color:white; text-decoration:none;">CONTACT</a> 
+    </div>
+    <div class="phone">
+        <h3><a href="mailto:fluidbeatsprod@gmail.com" style="color:black;">fluidbeatsprod@gmail.com</a></h3>
+    </div>
+    <div class="witblok">
+        <h2>Quality Beats</h2>
+    </div>    
+    <main id="main">
+        <div class="photos" >
+            <h2 id="header2">Concerts</h2>
+            <div>
+                    <div id="result"></div>
+                    <input type="text" id="input" name="input" placeholder="Zoeken..." />
+                    <script type="text/javascript">
+                    var t = document.getElementById("input");
+                    var r = document.getElementById("result");
+                    t.addEventListener("keyup", function(){
+                        var http = new XMLHttpRequest();
+                            http.onreadystatechange = function() {
+                            if (http.readyState == 4 && http.status == 200) {
+                                console.log("cfghfdhg", this.responseText);
+                                r.innerHTML = this.responseText;
+                            }
+                        };
+                        http.open("GET", "getdata.php?data=" + t.value, true);
+                        http.send();
+                    });
+        </script>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2 id="news">NEWSFEED</h2>
+        <article class="footer">
+            <h4 id="date">June 2016</h4>
+            <div id="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum.<br><a href="#" style="color:black;">learn more</a></div>
+            <p id="gradient">Signed to label</p>
+        </article>
+    </footer>
+</div>
+    <script type="text/javascript">
+            function downloadJSAtOnload() {
+                var element = document.createElement("script");
+                element.src = "script.js";
+                document.body.appendChild(element);
+            }
+            if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+            else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+            else window.onload = downloadJSAtOnload;
+        </script>
+</body>
+</html>
